@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>9 aylıq plan və ev tapşırıqları</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--tx:#1b1f2a;--mu:#5d6577;--bd:#e3e6ef;--lg:#7c3aed;--en:#2563eb;--it:#059669;--ac:#2563eb;--part:#f59e0b;--full:#059669;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12141b;--card:#1c1f2a;--tx:#eef0f6;--mu:#a1a8ba;--bd:#2c3040;--lg:#a78bfa;--en:#60a5fa;--it:#34d399;--ac:#60a5fa;--part:#fbbf24;--full:#34d399;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#12141b;--card:#1c1f2a;--tx:#eef0f6;--mu:#a1a8ba;--bd:#2c3040;--lg:#a78bfa;--en:#60a5fa;--it:#34d399;--ac:#60a5fa;--part:#fbbf24;--full:#34d399;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.45}
+.w{max-width:720px;margin:0 auto;padding:18px 14px 50px}
+h1{font-size:1.4rem;margin:6px 0 4px}
+h2{font-size:1.05rem;margin:0}
+.sub{color:var(--mu);font-size:.88rem;margin:0 0 14px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:12px 14px;margin-bottom:12px}
+.pb{height:10px;background:var(--bd);border-radius:6px;overflow:hidden;margin:8px 0 4px}
+.pb i{display:block;height:100%;background:var(--ac);width:0}
+.st{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px;text-align:center}
+.st b{display:block;font-size:1.1rem}
+.st span{font-size:.74rem;color:var(--mu)}
+.mh{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.mh button,.btn{font:inherit;font-size:.85rem;background:var(--card);color:var(--tx);border:1px solid var(--bd);border-radius:8px;padding:7px 12px}
+.mh button:disabled{opacity:.35}
+.ph{font-size:.78rem;color:var(--ac);font-weight:700}
+.gr{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.wd{font-size:.7rem;color:var(--mu);text-align:center;padding:2px 0}
+.dc{aspect-ratio:1/1;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx);font:inherit;font-size:.85rem;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;padding:0;position:relative}
+.dc:disabled{opacity:.3}
+.dc i{width:6px;height:6px;border-radius:50%;background:transparent}
+.dc.part i{background:var(--part)}
+.dc.full i{background:var(--full)}
+.dc.today{border-color:var(--ac);font-weight:700}
+.dc.sel{background:var(--ac);color:#fff;border-color:var(--ac)}
+.lg{display:flex;gap:12px;font-size:.74rem;color:var(--mu);margin-top:8px}
+.lg u{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px;text-decoration:none}
+.g{display:flex;gap:8px;align-items:flex-start;padding:6px 0;font-size:.9rem}
+.g input{width:20px;height:20px;flex:none;accent-color:var(--c);margin-top:1px}
+.g.d span{text-decoration:line-through;color:var(--mu)}
+.g b{color:var(--c)}
+.sec{background:var(--card);border:1px solid var(--bd);border-left:6px solid var(--c);border-radius:12px;padding:12px 14px;margin-bottom:10px}
+.sh{display:flex;justify-content:space-between;align-items:baseline}
+.sh span:first-child{font-weight:700}
+.sc{font-size:.82rem;color:var(--c);font-weight:700}
+ul{list-style:none;margin:6px 0;padding:0}
+li{display:flex;align-items:flex-start;gap:10px;padding:7px 0;border-bottom:1px solid var(--bd)}
+li:last-child{border-bottom:0}
+li input{accent-color:var(--c);width:22px;height:22px;flex:none}
+li span{flex:1;font-size:.95rem;word-break:break-word}
+li.d span{text-decoration:line-through;color:var(--mu)}
+li button{background:none;border:0;color:var(--mu);font-size:1.1rem;padding:0 4px}
+.add{display:flex;gap:6px;margin-top:8px}
+.add input{flex:1;min-width:0;font:inherit;font-size:.92rem;padding:9px 10px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx)}
+.add button{font:inherit;font-size:.9rem;font-weight:600;background:var(--c);color:#fff;border:0;border-radius:8px;padding:0 14px}
+.em{font-size:.85rem;color:var(--mu)}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<div class="w">
+<h1>🎯 9 aylıq plan</h1>
+<p class="sub" id="rng"></p>
+<div class="card"><b id="left"></b><div class="pb"><i id="tp"></i></div><div class="em" id="tpt"></div>
+<div class="st"><div><b id="s1">0</b><span>Tamamlanan tapşırıq</span></div><div><b id="s2">0</b><span>Tam bitmiş gün</span></div><div><b id="s3">0</b><span>Ardıcıl gün</span></div></div></div>
+
+<div class="card">
+<div class="mh"><button id="pv" aria-label="Əvvəlki ay">‹</button><div style="text-align:center"><h2 id="mn"></h2><div class="ph" id="phn"></div></div><button id="nx" aria-label="Növbəti ay">›</button></div>
+<div class="gr" id="gr"></div>
+<div class="lg"><span><u style="background:var(--part)"></u>qismən</span><span><u style="background:var(--full)"></u>hamısı edilib</span></div>
+</div>
+
+<div class="card"><h2>🏁 Bu ayın hədəfləri</h2><div id="goals"></div></div>
+
+<h2 id="dt" style="margin:16px 0 8px"></h2>
+<div id="app"></div>
+<div class="row"><button class="btn" id="mv">➡ Edilməyənləri sabaha köçür</button><button class="btn" id="cl">✔ Bu gün tamamlananları sil</button></div>
+</div>
+<script>
+var MS=['Yanvar','Fevral','Mart','Aprel','May','İyun','İyul','Avqust','Sentyabr','Oktyabr','Noyabr','Dekabr'];
+var WD=['B.e','Ç.a','Ç','C.a','C','Ş','B'];
+var START=new Date(2026,9,29),END=new Date(2027,6,29);
+var SECS=[
+{id:'lg',t:'🧠 Məntiq',c:'--lg',ph:'məs. Test 5, 1–20 suallar'},
+{id:'ew',t:'✍️ İngilis: Yazı',c:'--en',ph:'məs. 120 sözlük esse'},
+{id:'er',t:'📖 İngilis: Mətn',c:'--en',ph:'məs. Text 3 + suallar'},
+{id:'el',t:'🎧 İngilis: Dinləmə',c:'--en',ph:'məs. Audio 7'},
+{id:'eg',t:'📐 İngilis: Qrammatika',c:'--en',ph:'məs. Past Simple, ex. 4'},
+{id:'it',t:'💻 İnformatika',c:'--it',ph:'məs. Test 2, 1–15 suallar'}];
+var PH=[
+{n:'1-ci mərhələ: Əsaslar (Oktyabr–Dekabr)',m:[9,10,11],g:[['--en','İngilis: əsas qrammatika vaxtları və gündə 10 yeni söz'],['--lg','Məntiq: əsas qaydalar və sadə məsələ tipləri'],['--it','İnformatika: əsas anlayışlar və sadə alqoritmlər']]},
+{n:'2-ci mərhələ: Dərinləşmə (Yanvar–Mart)',m:[0,1,2],g:[['--en','İngilis: mürəkkəb qrammatika, reading və listening məşqi'],['--lg','Məntiq: çətin məsələ tipləri, sürətin artırılması'],['--it','İnformatika: praktik kod və mövzu üzrə testlər']]},
+{n:'3-cü mərhələ: Test məşqi (Aprel–May)',m:[3,4],g:[['--en','İngilis: tam variant testləri, səhv təhlili'],['--lg','Məntiq: vaxta qarşı tam testlər'],['--it','İnformatika: tam variantlar və zəif mövzuların təkrarı']]},
+{n:'4-cü mərhələ: Yekun təkrar (İyun–İyul)',m:[5,6],g:[['--en','İngilis: yekun təkrar, səhv dəftəri'],['--lg','Məntiq: zəif tiplərin təkrarı, imtahan rejimi'],['--it','İnformatika: bütün mövzuların sürətli təkrarı']]}];
+var KEY='hw-9m-v1',S={days:{},goals:{}};
+try{S=JSON.parse(localStorage.getItem(KEY)||'')||S}catch(e){}
+if(!S.days)S.days={};if(!S.goals)S.goals={};
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
+function key(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
+function day(k){if(!S.days[k])S.days[k]={};SECS.forEach(function(s){if(!S.days[k][s.id])S.days[k][s.id]=[]});return S.days[k]}
+function stat(k){var o=S.days[k];if(!o)return[0,0];var t=0,d=0;SECS.forEach(function(s){(o[s.id]||[]).forEach(function(x){t++;if(x.d)d++})});return[d,t]}
+function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
+var today=new Date();today=new Date(today.getFullYear(),today.getMonth(),today.getDate());
+var sel=today<START?START:(today>END?END:today),cm=new Date(sel.getFullYear(),sel.getMonth(),1);
+var first=new Date(START.getFullYear(),START.getMonth(),1),last=new Date(END.getFullYear(),END.getMonth(),1);
+function phase(m){for(var i=0;i<PH.length;i++)if(PH[i].m.indexOf(m)>-1)return i;return 0}
+function header(){
+var tot=Math.round((END-START)/864e5),el1=Math.round((today-START)/864e5);
+var p=Math.max(0,Math.min(100,Math.round(el1/tot*100))),left=Math.max(0,tot-el1);
+document.getElementById('rng').textContent='29 Oktyabr 2026 – 29 İyul 2027 (təxminən '+tot+' gün)';
+document.getElementById('left').textContent=left+' gün qalıb';
+document.getElementById('tp').style.width=p+'%';
+document.getElementById('tpt').textContent='Vaxtın '+p+'%-i keçib';
+var D=0,F=0,k;
+for(k in S.days){var a=stat(k);D+=a[0];if(a[1]>0&&a[0]===a[1])F++}
+var str=0,c=new Date(today);
+function full(d){var a=stat(key(d));return a[1]>0&&a[0]===a[1]}
+if(!full(c))c.setDate(c.getDate()-1);
+while(c>=START&&full(c)){str++;c.setDate(c.getDate()-1)}
+document.getElementById('s1').textContent=D;document.getElementById('s2').textContent=F;document.getElementById('s3').textContent=str}
+function cal(){
+document.getElementById('mn').textContent=MS[cm.getMonth()]+' '+cm.getFullYear();
+var pi=phase(cm.getMonth());document.getElementById('phn').textContent=PH[pi].n;
+document.getElementById('pv').disabled=cm<=first;document.getElementById('nx').disabled=cm>=last;
+var g=document.getElementById('gr');g.textContent='';
+WD.forEach(function(w){g.appendChild(el('div','wd',w))});
+var off=(cm.getDay()+6)%7,n=new Date(cm.getFullYear(),cm.getMonth()+1,0).getDate(),i;
+for(i=0;i<off;i++)g.appendChild(el('div'));
+for(i=1;i<=n;i++){(function(i){
+var d=new Date(cm.getFullYear(),cm.getMonth(),i),k=key(d),a=stat(k);
+var b=el('button','dc'+(a[1]&&a[0]===a[1]?' full':a[1]?' part':'')+(+d===+today?' today':'')+(+d===+sel?' sel':''),String(i));
+b.appendChild(el('i'));b.disabled=d<START||d>END;
+b.onclick=function(){sel=d;render()};g.appendChild(b)})(i)}
+var gk=cm.getFullYear()+'-'+cm.getMonth(),gl=document.getElementById('goals');gl.textContent='';
+if(!S.goals[gk])S.goals[gk]=[false,false,false];
+PH[pi].g.forEach(function(x,j){
+var r=el('label','g'+(S.goals[gk][j]?' d':''));r.style.setProperty('--c','var('+x[0]+')');
+var cb=el('input');cb.type='checkbox';cb.checked=S.goals[gk][j];
+cb.onchange=function(){S.goals[gk][j]=cb.checked;save();render()};
+r.appendChild(cb);r.appendChild(el('span','',x[1]));gl.appendChild(r)})}
+function dayView(){
+var k=key(sel),o=day(k),app=document.getElementById('app');app.textContent='';
+document.getElementById('dt').textContent='📝 '+sel.getDate()+' '+MS[sel.getMonth()]+' '+sel.getFullYear()+' – ev tapşırıqları';
+SECS.forEach(function(s){
+var L=o[s.id],d=L.filter(function(x){return x.d}).length;
+var sec=el('div','sec');sec.style.setProperty('--c','var('+s.c+')');
+var h=el('div','sh');h.appendChild(el('span','',s.t));h.appendChild(el('span','sc',d+' / '+L.length));sec.appendChild(h);
+var ul=el('ul');if(!L.length)ul.appendChild(el('div','em','Tapşırıq yoxdur.'));
+L.forEach(function(x,i){
+var li=el('li',x.d?'d':''),cb=el('input');cb.type='checkbox';cb.checked=!!x.d;
+cb.onchange=function(){x.d=cb.checked;save();render()};
+var del=el('button','','✕');del.setAttribute('aria-label','Sil');del.onclick=function(){L.splice(i,1);save();render()};
+li.appendChild(cb);li.appendChild(el('span','',x.t));li.appendChild(del);ul.appendChild(li)});
+sec.appendChild(ul);
+var f=el('div','add'),inp=el('input');inp.placeholder=s.ph;inp.maxLength=120;
+var b=el('button','','+ Əlavə');
+function add(){var v=inp.value.trim();if(!v)return;L.push({t:v,d:false});save();render()}
+b.onclick=add;inp.onkeydown=function(e){if(e.key==='Enter')add()};
+f.appendChild(inp);f.appendChild(b);sec.appendChild(f);app.appendChild(sec)})}
+function render(){header();cal();dayView()}
+document.getElementById('pv').onclick=function(){cm=new Date(cm.getFullYear(),cm.getMonth()-1,1);render()};
+document.getElementById('nx').onclick=function(){cm=new Date(cm.getFullYear(),cm.getMonth()+1,1);render()};
+document.getElementById('cl').onclick=function(){var o=day(key(sel));SECS.forEach(function(s){o[s.id]=o[s.id].filter(function(x){return !x.d})});save();render()};
+document.getElementById('mv').onclick=function(){
+var nx=new Date(sel);nx.setDate(nx.getDate()+1);if(nx>END)return;
+var o=day(key(sel)),p=day(key(nx));
+SECS.forEach(function(s){var keep=[];o[s.id].forEach(function(x){if(x.d)keep.push(x);else p[s.id].push({t:x.t,d:false})});o[s.id]=keep});
+save();sel=nx;cm=new Date(sel.getFullYear(),sel.getMonth(),1);render()};
+render();
+</script>
+</body>
+</html>
